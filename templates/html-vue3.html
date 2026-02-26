@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html-vue3</title>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/element-plus/dist/index.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://unpkg.com/element-plus"></script>
+  </head>
+  <body>
+    <div id="app"><el-button>button</el-button></div>
+    <script>
+      const app = Vue.createApp({
+        setup() {
+          return {
+            name: '张三'
+          }
+        }
+      })
+      app.use(ElementPlus)
+      app.mount('#app')
+    </script>
+  </body>
+</html>
